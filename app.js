@@ -53,9 +53,6 @@ app.get('/', (req, res) => {
     }]
   })
 })
-// app.get('/books', (req, res) => {
-//   res.send('Hello books!')
-// })
 
 app.listen(port, () => {
   console.log(`Running service on port ${ port }`)
