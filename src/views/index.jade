@@ -1,0 +1,25 @@
+//- - let list = ['1','2','3']
+html
+  head
+    //- bower:css
+    link(rel='stylesheet', href='/lib/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/lib/font-awesome/css/font-awesome.min.css')
+    //- endbower
+    //- inject:css
+    link(rel="stylesheet", href="/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/css/styles.css")
+    //- endinject
+    //- bower:js
+    script(src='/lib/jquery/dist/jquery.js')
+    script(src='/lib/bootstrap/dist/js/bootstrap.js')
+    //- endbower
+    //- inject:js
+    script(src="/js/bootstrap.min.js")
+    //- endinject
+    title MyApp
+  body(class='myClass')
+    h1(id='myId') My app
+    h3 sub heading
+    ul
+      each item in list
+        li= item
